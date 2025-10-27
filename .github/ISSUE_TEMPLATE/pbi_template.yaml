@@ -1,0 +1,23 @@
+name: Product Backlog Item
+description: Create or update a PBI in the product's backlog using mandatory feilds
+title: "PBI# : "
+labels: ["Backlog Item"]
+projects: ['ugoetudo/athlete-dashboard']
+body:
+  - type: markdown
+    attributes:
+      value: Please be as specific as possible when describing "what" and "definition of done"
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      placeholder: As a ___ I would like to ___ because ___
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who
+      placeholder: who does this user story provide value to?
+    validations: 
+      required: true
