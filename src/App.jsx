@@ -1,10 +1,14 @@
 import './App.css';
+import './NewExercise'
+import { NewExercise } from './NewExercise';
 
 export function App() {
   return (
     <>
-      <h1>Parcel React App</h1>
-      <p>Edit <code>src/App.tsx</code> to get started!</p>
+    <h1>Healthy Habits Gym</h1> 
+    <div> 
+      <NewExercise />
+    </div>
     </>
   );
 }
