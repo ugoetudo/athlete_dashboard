@@ -1,3 +1,6 @@
+import {useState} from 'react';
+import './App.css';
+
 export default function MyForm() {
   var [name, setVnumber] = useState("");
   
@@ -20,10 +23,11 @@ export default function MyForm() {
 
           <input
             type="text"
+            className={"titleEntry"}
             value={name}
             onChange={(e) => setVnumber(e.target.value)} />
         </label>
-        <input type="submit" />
+        <input type="submit" className={"submitBtn"}/>
       </form>
       
     </div>

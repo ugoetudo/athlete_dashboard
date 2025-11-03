@@ -3,6 +3,8 @@ import { useState } from 'react';
 function Summary ({title, reps, sets, desc}) {
     return (
         <>
+        
+        <div className={"infoBox"}>A new exercise has been added to the database:</div>
         <h2>{title}</h2>
         <p>{desc}</p>
         <p>{`Do ${String(reps)} reps, for ${String(sets)} sets.`}</p>
@@ -43,7 +45,7 @@ export function NewExercise() {
                     <textarea className="textEntry" name="exDesc" rows={10} cols={40} />
                 </label>
                 <hr/>
-                <button type="submit">Save New Exercise</button>
+                <button type="submit" className={"submitBtn"}>Save New Exercise</button>
             </form>
     );
 
